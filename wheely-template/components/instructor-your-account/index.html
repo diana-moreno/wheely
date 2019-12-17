@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Wheely</title>
+  <meta name="description" content="Content for a Driving School">
+  <meta name="author" content="Diana Moreno">
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+  <header>
+    <nav role="navigation" class='navbar'>
+      <div class="navbar__menu-toggle">
+        <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+        <input type='checkbox' class="navbar__checkbox" />
+        <span class='navbar__line'></span>
+        <span class='navbar__line'></span>
+        <span class='navbar__line'></span>
+        <h1 class='navbar__title'>Wheely</h1>
+        <ul class="navbar__menu">
+          <li class='navbar__menu-item'>Home</li>
+          <li class='navbar__menu-item'>Your account</li>
+        </ul>
+      </div>
+    </nav>
+    <div class='greeting'>
+      <i class="material-icons greeting__rol-icon">supervisor_account</i>
+      <h3 class='greeting__name'>Luis Garcia</h3>
+    </div>
+    <h3 class='title'>Your account</h3>
+  </header>
+  <section class='detail-user'>
+    <div>
+      <a href="">
+        <i class="material-icons detail-user__icon">create</i>
+      </a>
+      <p><b>Name: </b><span>Carlos</span></p>
+    </div>
+    <div>
+      <a href="">
+        <i class="material-icons detail-user__icon">create</i>
+      </a>
+      <p><b>Surname: </b><span>López</span></p>
+    </div>
+    <div>
+      <a href="">
+        <i class="material-icons detail-user__icon">create</i>
+      </a>
+      <p><b>Email: </b><span>carlos@gmail.com</span></p>
+    </div>
+    <div>
+      <a href="">
+        <i class="material-icons detail-user__icon detail-user__icon--blue">search</i>
+      </a>
+      <p>Statistics</p>
+    </div>
+    <div>
+      <a href="">
+        <i class="material-icons detail-user__icon detail-user__icon--blue">search</i>
+      </a>
+      <p>Reservations</p>
+    </div>
+    <div>
+      <a href="">
+        <i class="material-icons detail-user__icon detail-user__icon--blue">search</i>
+      </a>
+      <p>Your students</p>
+    </div>
+  </section>
+</body>
+
+</html>

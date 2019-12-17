@@ -1,0 +1,73 @@
+.login
+  background-image: url('./images/asphalt-wheel.jpg')
+  text-align: center
+  background-size: cover
+  height: 100%
+  background-position: center
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    color: white
+
+  &__title
+    font-size: 4rem
+    text-shadow: 2px 2px 8px #030303
+    margin-top: 4rem
+
+  &__subtitle
+    font-size: 1.3rem
+    margin: 0
+
+  &__form
+    text-align: center
+    justify-content: center
+    display: flex
+    flex-direction: column
+    width: 80%
+    align-items: center
+
+  &__form-item
+    font-size: 1.2rem
+    margin: 1rem
+    padding: 0.5rem 0.5rem
+    border-radius: 6px
+    border: none
+
+  &__button
+    font-size: 1.2rem
+    display: block
+    color: white
+    background: #009688
+    margin: 1rem
+    padding: 0.5rem 0.5rem
+    border: none
+    border-radius: 6px
+    width: 17.1rem
+
+// Small tablets (portrait view)
+@media only screen and (min-width:768px)
+  .login
+
+    &__title
+      font-size: 5rem
+      letter-spacing: 0.5rem
+
+// Tablets and small desktops
+@media only screen and (min-width:992px)
+  .login
+
+    &__title
+      font-size: 6rem
+      letter-spacing: 0.5rem
+
+    &__form-item
+      width: 26rem
+
+    &__button
+      width: 27.1rem

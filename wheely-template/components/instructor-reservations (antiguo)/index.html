@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Wheely</title>
+  <meta name="description" content="Content for a Driving School">
+  <meta name="author" content="Diana Moreno">
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+  <header>
+    <nav role="navigation" class='navbar'>
+      <div class="navbar__menu-toggle">
+        <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+        <input type='checkbox' class="navbar__checkbox" />
+        <span class='navbar__line'></span>
+        <span class='navbar__line'></span>
+        <span class='navbar__line'></span>
+        <h1 class='navbar__title'>Wheely</h1>
+        <ul class="navbar__menu">
+          <li class='navbar__menu-item'>Home</li>
+          <li class='navbar__menu-item'>Booking</li>
+          <li class='navbar__menu-item'>Reservations</li>
+          <li class='navbar__menu-item'>Progression</li>
+          <li class='navbar__menu-item'>Credits</li>
+        </ul>
+      </div>
+    </nav>
+    <div class='greeting'>
+      <i class="material-icons greeting__rol-icon">directions_car</i>
+      <h3 class='greeting__name'>Diana Moreno</h3>
+    </div>
+    <h3 class='title'>Reservations</h3>
+  </header>
+
+  <section class='reservations'>
+    <div class='reservations__category-container'>
+      <div class='reservations__category'>
+        <h4 class='reservations__category-title'>Pending</h4>
+        <ul class='reservations__category-list'>
+          <li class='category__item'>
+            <div class='category__item-icon'>
+              <i class="material-icons">hourglass_empty</i>
+            </div>
+            <div class='category__item-detail'>
+              <p>Lun 24 de abril de 2020</p>
+              <p>17:00</p>
+              <p>Paco García</p>
+            </div>
+          </li>
+          <li class='category__item'>
+            <div class='category__item-icon'>
+              <i class="material-icons">hourglass_empty</i>
+            </div>
+            <div class='category__item-detail'>
+              <p>Lun 24 de abril de 2020</p>
+              <p>17:00</p>
+              <p>Paco García</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class='reservations__category'>
+        <h4 class='reservations__category-title'>Historical</h4>
+        <ul class='reservations__category-list'>
+          <li class='category__item'>
+            <div class='category__item-icon category__item-icon--done'>
+              <i class="material-icons">done</i>
+            </div>
+            <div class='category__item-detail'>
+              <p>Lun 24 de abril de 2020</p>
+              <p>17:00</p>
+              <p>Paco García</p>
+            </div>
+          </li>
+          <li class='category__item'>
+            <div class='category__item-icon category__item-icon--done'>
+              <i class="material-icons">done</i>
+            </div>
+            <div class='category__item-detail'>
+              <p>Lun 24 de abril de 2020</p>
+              <p>17:00</p>
+              <p>Paco García</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

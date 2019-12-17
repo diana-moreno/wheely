@@ -1,0 +1,99 @@
+.detail-user
+  margin: 2rem
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  height: 60%
+
+  &__container
+    height: 100%
+
+  form
+    height: 100%
+
+    div
+      display: flex
+      align-items: center
+      p
+        word-break: break-all
+
+  &__icon
+    margin-right: 1rem
+    color: orange
+    cursor: pointer
+
+    &--blue
+      color: #03A9F4
+
+
+  &__button
+    font-size: 1rem
+    display: block
+    color: white
+    margin: 1rem 2rem
+    padding: 0.5rem 0.5rem
+    border: none
+    border-radius: 6px
+    font-family: Comfortaa
+    margin-bottom: 0
+
+    &--submit
+      background: #17b0a2
+      width: 7rem
+
+    &--cancel
+      background: gray
+      width: 7rem
+
+    &--delete
+      width: 15rem
+      margin: 0 auto
+      background: #d46f67
+
+    &--hidden
+      background: none
+      border: none
+      outline: none
+      padding: 0
+
+  &__buttons
+      _position: absolute
+      _bottom: 3rem
+      _right: 1rem
+
+  &__input
+    display: block
+    margin-top: 0.5rem
+    padding: 0.3rem
+    font-size: 0.9rem
+
+    &--separation
+      margin-top: 0
+
+      &-no-icon
+        margin-left: 2.5rem
+
+    &--password
+      display: block
+      margin-top: 0.5rem
+      padding: 0.3rem
+      font-size: 1rem
+      margin: 0 auto
+
+
+// Small tablets and large smartphones (landscape view)
+@media only screen and (min-width:576px)
+  .detail-user
+    height: 60%
+
+    &__container
+      width: 20rem
+      height: 77%
+      margin: 0 auto
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
+      padding-top: 3rem
+
+    &__buttons
+      position: unset

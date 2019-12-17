@@ -1,0 +1,67 @@
+html {
+  font-family: Comfortaa;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.login {
+  background-image: url("../images/asphalt-wheel.jpg");
+  text-align: center;
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.login__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.login__logo {
+  width: 6rem;
+  align-self: flex-end;
+  padding-right: 2rem;
+}
+.login__title {
+  font-size: 4rem;
+  text-shadow: 2px 2px 8px #030303;
+  margin-top: 1rem;
+}
+.login__subtitle {
+  font-size: 1.3rem;
+  margin: 0;
+}
+.login__form {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.login__form-item {
+  font-size: 1.2rem;
+  margin: 1rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: 6px;
+  border: none;
+}
+.login__button {
+  font-size: 1.2rem;
+  display: block;
+  color: white;
+  background: #009688;
+  margin: 1rem;
+  padding: 0.5rem 0.5rem;
+  border: none;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=index.css.map */

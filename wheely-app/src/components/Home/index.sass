@@ -1,0 +1,27 @@
+.home
+  margin: 2rem
+  line-height: 1.9rem
+  border-bottom: 1px solid #8f8f8f
+
+  &__greeting
+    text-align: center
+    font-size: 1.2rem
+    border-bottom: 1px solid gray
+    padding-bottom: 0.5rem
+
+  &__description
+     margin: 0 auto
+     max-width: 30rem
+
+// Small tablets (portrait view)
+@media only screen and (min-width:768px)
+ .home
+  margin: 7rem
+
+// Tablets and small desktops
+@media only screen and (min-width:992px)
+  .home
+    line-height: 2rem
+
+    &__greeting
+      font-size: 1.4rem

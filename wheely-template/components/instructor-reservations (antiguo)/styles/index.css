@@ -1,0 +1,149 @@
+html {
+  font-family: Comfortaa;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.navbar {
+  display: flex;
+  background: #17b0a2;
+  height: 4rem;
+  /*.navbar__menu li*/
+}
+.navbar__menu-toggle {
+  z-index: 1;
+  padding: 1rem;
+  background: #17b0a2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+.navbar__title {
+  color: white;
+  position: absolute;
+  text-align: right;
+  right: 1rem;
+  top: 0;
+  letter-spacing: 0.2rem;
+}
+.navbar__checkbox {
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  padding: 1rem;
+  -webkit-touch-callout: none;
+}
+.navbar__line {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: whitesmoke;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+.navbar__menu {
+  position: absolute;
+  width: 100%;
+  color: white;
+  background: #18b0a2;
+  list-style-type: none;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  margin-top: 9.5rem;
+  padding: 0;
+  margin-left: -1rem;
+  text-align: center;
+}
+.navbar__menu-item {
+  padding: 1rem 0;
+  font-size: 1.1rem;
+}
+.navbar__menu-toggle input:checked ~ ul {
+  transform: none;
+}
+
+.greeting {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  background: #17b0a2;
+  font-size: 0.8rem;
+}
+.greeting__name {
+  margin: 0.3rem 1rem 1.5rem 1rem;
+  color: whitesmoke;
+  margin-top: 0.3rem;
+}
+.greeting__rol-icon {
+  color: whitesmoke;
+}
+
+.title {
+  margin: 0;
+  background: #dedbdb;
+  text-align: center;
+  padding: 1rem;
+  color: #585555;
+  font-weight: 400;
+}
+
+.reservations__category-container {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.reservations__category {
+  margin-top: 2rem;
+  color: #585555;
+}
+
+.reservations__category-title {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0;
+}
+
+.reservations__category-list {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.category__item {
+  display: flex;
+  padding: 0.5rem 0;
+  margin: 1rem 0;
+  box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.04), 0 1px 3px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 7px;
+}
+.category__item p {
+  margin: 0.2rem 0;
+}
+
+.category__item-icon {
+  width: 22%;
+  font-size: 2rem;
+  color: #FF9800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category__item-icon--done {
+  color: #009688;
+}
+
+/*# sourceMappingURL=index.css.map */

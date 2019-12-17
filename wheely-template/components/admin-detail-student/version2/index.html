@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Wheely</title>
+  <meta name="description" content="Content for a Driving School">
+  <meta name="author" content="Diana Moreno">
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+  <header>
+    <nav role="navigation" class='navbar'>
+      <div class="navbar__menu-toggle">
+        <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+        <input type='checkbox' class="navbar__checkbox" />
+        <span class='navbar__line'></span>
+        <span class='navbar__line'></span>
+        <span class='navbar__line'></span>
+        <h1 class='navbar__title'>Wheely</h1>
+        <ul class="navbar__menu">
+          <li class='navbar__menu-item'>New user</li>
+          <li class='navbar__menu-item'>Users</li>
+        </ul>
+      </div>
+    </nav>
+    <div class='greeting'>
+      <i class="material-icons greeting__rol-icon">supervisor_account</i>
+      <h3 class='greeting__name'>Luis Garcia</h3>
+    </div>
+    <h3 class='title'>Student account</h3>
+  </header>
+  <section class='detail-user'>
+      <form>
+        <input type="text" name="name" placeholder="Toni" disabled/>
+        <input type="text" name="surname" placeholder="Díaz" disabled/>
+        <input type="text" name="email" placeholder="toni@gmail.com" disabled/>
+        <select name="role" disabled>
+          <option value="student">student</option>
+          <option value="instructor">instructor</option>
+          <option value="admin">admin</option>
+        </select>
+        <div>
+          <button class='detail-user__button detail-user__button--edit'>Edit</button>
+          <button class='detail-user__button detail-user__button--save'>Save</button>
+        </div>
+      </form>
+      <button class='detail-user__button detail-user__button--check'>Check progression</button>
+      <button class='detail-user__button detail-user__button--check'>Check reservations</button>
+    <button class='detail-user__button detail-user__button--delete'>Delete user</button>
+  </section>
+</body>
+
+</html>

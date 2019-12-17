@@ -1,0 +1,195 @@
+html
+  font-family: Comfortaa
+  height: 100%
+
+body
+  margin: 0
+  height: 100%
+  color: #585555
+
+.navbar
+  display: flex
+  background: #17b0a2
+  height: 4rem
+
+  &__menu-toggle
+    z-index: 1
+    padding: 1rem
+    background: #17b0a2
+    display: flex
+    justify-content: center
+    flex-direction: column
+    position: relative
+    width: 100%
+
+  &__title
+    color: white
+    position: absolute
+    text-align: right
+    right: 1rem
+    top: 0
+    letter-spacing: 0.2rem
+
+  &__checkbox
+    width: 40px
+    height: 32px
+    position: absolute
+    cursor: pointer
+    opacity: 0
+    z-index: 2
+    padding: 1rem
+    -webkit-touch-callout: none
+
+  &__line
+    display: block
+    width: 33px
+    height: 4px
+    margin-bottom: 5px
+    position: relative
+    background: whitesmoke
+    border-radius: 3px
+    z-index: 1
+    transform-origin: 4px 0px
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+
+  &__menu
+    position: absolute
+    width: 100%
+    color: white
+    background: #18b0a2
+    list-style-type: none
+    transform-origin: 0% 0%
+    transform: translate(-100%, 0)
+    margin-top: 5rem
+    padding: 1rem 0
+    margin-left: -1rem
+    text-align: center
+
+  /*.navbar__menu li*/
+  &__menu-item
+    padding: 1rem 0
+    font-size: 1.1rem
+
+  &__menu-toggle input:checked ~ ul
+    transform: none
+
+.greeting
+  display: flex
+  justify-content: flex-end
+  margin: 0
+  background: #17b0a2
+  font-size: 0.8rem
+
+  &__name
+    margin: 0.3rem 1rem 1.5rem 1rem
+    color: whitesmoke
+    margin-top: 0.3rem
+
+  &__rol-icon
+    color: whitesmoke
+
+.title
+  margin: 0
+  background: #dedbdb
+  text-align: center
+  padding: 1rem
+  color: #585555
+  font-weight: 400
+
+.schedule
+  margin-top: 1rem
+  text-align: center
+
+  &__form-button
+    margin: 2rem auto
+    padding: 1rem 4rem
+    color: whitesmoke
+    border: none
+    background-color: #17b0a2
+    font-size: 1rem
+    display: flex
+
+
+
+.timetable
+  display: grid
+  grid-template-areas: ". week" "time content"
+  grid-template-columns: 64px
+  grid-template-rows: 45px
+  width: 94vw
+  text-align: center
+
+  .week-names
+    grid-area: week
+    display: grid
+    // 7 days a week
+    grid-template-columns: repeat(7, 1fr)
+    text-transform: uppercase
+    & > div
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 100%
+
+
+  .time-interval
+    grid-area: time
+    display: grid
+    // 6 time intervals
+    grid-template-rows: repeat(15, 1fr)
+    & > div
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 100%
+
+
+  .content
+    grid-area: content
+    display: grid
+    grid-template-rows: repeat(15, 1fr)
+    grid-template-columns: repeat(7, 1fr)
+    border: 1px solid #cecece
+
+.timetable .content > label
+  box-shadow: inset 1px 1px #969592
+  position: relative
+  background-color: whitesmoke
+
+
+/* Hide the browser's default checkbox */
+.container input
+  width: 100%
+  height: 100%
+  position: absolute
+  margin: 0
+  visibility: hidden
+
+/* Create a custom checkbox */
+.checkmark
+  position: absolute
+  top: 2px
+  left: 2px
+  height: calc(100% - 3px)
+  width: calc(100% - 3px)
+
+/* When the checkbox is checked, add a green background */
+.container input:checked ~ .checkmark
+  background-color: #17b0a2
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after
+  content: ""
+  position: absolute
+  display: none
+
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after
+  display: block
+
+
+

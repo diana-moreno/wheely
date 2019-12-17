@@ -1,0 +1,122 @@
+.navbar
+  display: flex
+  background: #17b0a2
+  height: 4rem
+
+  &__menu-toggle
+    z-index: 1
+    padding: 1rem
+    background: #17b0a2
+    display: flex
+    justify-content: center
+    flex-direction: column
+    position: relative
+    width: 100%
+
+    div
+      .navbar__line
+        display: block
+        width: 33px
+        height: 4px
+        margin-bottom: 5px
+        position: relative
+        background: whitesmoke
+        border-radius: 3px
+        z-index: 1
+
+  &__title
+    color: white
+    position: absolute
+    text-align: right
+    right: 1rem
+    top: 0
+    letter-spacing: 0.2rem
+
+  &__lines-container
+    width: 40px
+    height: 32px
+    position: absolute
+    cursor: pointer
+    z-index: 2
+    padding: 1rem
+    margin-top: 0.3rem
+    -webkit-touch-callout: none
+    -webkit-tap-highlight-color: transparent
+
+  &__menu
+    position: absolute
+    width: 100%
+    color: white
+    background: #18b0a2
+    list-style-type: none
+    margin-top: 5rem
+    padding: 1rem 0
+    margin-left: -1rem
+    text-align: center
+    padding-top: 5rem
+    transform-origin: 0% 0%
+    transform: translate(-100%, 0)
+
+    li
+      padding: 1rem 0
+      font-size: 1.1rem
+
+      a
+        text-decoration: none
+        color: white
+        font-size: 1.2rem
+
+    &--show
+      transform: none
+
+.greeting
+  display: flex
+  justify-content: flex-end
+  margin: 0
+  background: #17b0a2
+  font-size: 0.8rem
+
+  &__name
+    margin: 0.3rem 1rem 1.5rem 1rem
+    color: whitesmoke
+    margin-top: 0.3rem
+
+  &__rol-icon
+    color: whitesmoke
+
+.title
+  display: flex
+  justify-content: center
+  align-items: center
+  background: #f5f1d1
+  position: relative
+
+  h3
+    margin: 0
+    text-align: center
+    padding: 1rem
+    color: #585555
+    font-weight: 400
+
+  i
+    position: absolute
+    left: 2rem
+    font-size: 2rem
+    color: #565353
+
+// Small tablets and large smartphones (landscape view)
+@media only screen and (min-width:576px)
+  .navbar
+    &__lines-container
+      display: none
+
+    &__menu
+      position: initial
+      display: flex
+      margin-top: 2.5rem
+      padding-top: 0
+      transform: none
+      width: 20rem
+
+      li
+        margin-left: 2rem

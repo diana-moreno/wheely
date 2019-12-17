@@ -1,0 +1,47 @@
+.users
+
+  &__searcher
+    margin: 2rem
+    display: flex
+    justify-content: center
+
+  &__searcher-input
+    font-size: 1rem
+    padding: 0.5rem
+    border: 1px solid #a0a0a0
+    border-radius: 7px
+    width: 22rem;
+
+  &__searcher-button
+    font-size: 1rem
+    padding: 0.5rem
+    background-color: #17b0a2
+    border: none
+    color: white
+    border-top-right-radius: 7px
+    border-bottom-right-radius: 7px
+
+  &__user
+    list-style: none
+
+    a
+      display: flex
+      text-decoration: none
+      align-items: center
+      color: #585555
+
+  &__user-icon
+    margin-right: 1rem
+    color: #03A9F4
+    font-size: 1.8rem
+
+
+// Small tablets and large smartphones (landscape view)
+@media only screen and (min-width:576px)
+  .users
+    ul
+      width: 25rem
+      margin: 0 auto
+
+      a
+       line-height: 1.5rem

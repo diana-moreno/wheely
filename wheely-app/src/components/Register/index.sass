@@ -1,0 +1,63 @@
+.register
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  &__form
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    input
+      font-size: 1rem
+      margin: 0.5rem
+      padding: 0.5rem 0.5rem
+      border-radius: 6px
+      border: none
+      width: 16rem
+      font-family: Comfortaa
+      color: #6c6464
+      border: 1px solid #a0a0a0
+
+    select
+      margin: 0.5rem
+      padding: 0.5rem 0.5rem
+      border-radius: 6px
+      border: none
+      width: 17rem
+      font-size: 1rem
+      background: white
+      color: #625f5f
+      font-family: Comfortaa
+      border: 1px solid #a0a0a0
+
+    button
+      font-size: 1rem
+      display: block
+      color: white
+      background: #17b0a2
+      margin: 1rem 2rem
+      padding: 0.5rem 0.5rem
+      border: none
+      border-radius: 6px
+      width: 17rem
+      font-family: Comfortaa
+      margin-bottom: 0
+
+// Tablets and small desktops
+@media only screen and (min-width:992px)
+  .register
+    height: 77%
+
+    &__form
+
+      input
+        width: 26rem
+
+      select
+        width: 27rem
+
+      button
+        width: 27rem

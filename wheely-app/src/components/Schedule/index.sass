@@ -1,0 +1,70 @@
+.schedule
+  margin-top: 1rem
+  text-align: center
+
+  &__timetable
+    display: grid
+    grid-template-areas: ". week" "time content"
+    grid-template-columns: 64px
+    grid-template-rows: 45px
+    max-width: 40rem
+    min-width: 20rem
+    text-align: center
+    margin: 0 auto
+    margin-bottom: 2rem
+    padding: 1rem
+
+    ul
+      margin: 0
+      padding: 0
+
+  &__item
+    list-style: none
+    border: 1px solid gray
+
+  &__item--checked
+    background-color: #17b0a2
+
+  &__week-names
+    grid-area: week
+    display: grid
+    grid-template-columns: repeat(7, 1fr)
+    text-transform: uppercase
+
+    & > div
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 100%
+
+  &__time-interval
+    grid-area: time
+    display: grid
+    grid-template-rows: repeat(15, 1fr)
+
+    & > div
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 100%
+
+  &__board
+    grid-area: content
+    display: grid
+    grid-template-rows: repeat(15, 1fr)
+    grid-template-columns: repeat(7, 1fr)
+    border: 1px solid #cecece
+
+// Small tablets (portrait view)
+@media only screen and (min-width:768px)
+  .schedule
+    &__timetable
+      width: 30rem
+
+// Tablets and small desktops
+@media only screen and (min-width:992px)
+  .schedule
+    &__timetable
+      width: 40rem
