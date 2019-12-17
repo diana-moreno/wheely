@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "./static/css/main.8bc831a9.chunk.css",
+    "main.css": "./static/css/main.fbef8c18.chunk.css",
     "main.js": "./static/js/main.4423ea2a.chunk.js",
     "main.js.map": "./static/js/main.4423ea2a.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.83503619.js",
@@ -8,15 +8,15 @@
     "static/js/2.4463e062.chunk.js": "./static/js/2.4463e062.chunk.js",
     "static/js/2.4463e062.chunk.js.map": "./static/js/2.4463e062.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.a9b63fb5f0b4731e62eaac043c36d182.js": "./precache-manifest.a9b63fb5f0b4731e62eaac043c36d182.js",
+    "precache-manifest.72a311aed71baf9a1270521ac5cb6d05.js": "./precache-manifest.72a311aed71baf9a1270521ac5cb6d05.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.8bc831a9.chunk.css.map": "./static/css/main.8bc831a9.chunk.css.map",
+    "static/css/main.fbef8c18.chunk.css.map": "./static/css/main.fbef8c18.chunk.css.map",
     "static/media/index.sass": "./static/media/asphalt-wheel.7661e0a3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.83503619.js",
     "static/js/2.4463e062.chunk.js",
-    "static/css/main.8bc831a9.chunk.css",
+    "static/css/main.fbef8c18.chunk.css",
     "static/js/main.4423ea2a.chunk.js"
   ]
 }
